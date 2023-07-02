@@ -21,7 +21,7 @@
         <input type="password" class="form-control" placeholder="confirm password ...">
     </div>
     <div class="mb-4">
-        <label for="msg">Entre votre msg</label>
+        <label for="msg">Entre votre message</label>
         <input type="password" class="form-control" placeholder="confirm password ...">
     </div>
     <input type="submit" value="Envoyer" class="btn btn-success">
