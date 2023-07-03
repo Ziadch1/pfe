@@ -159,7 +159,7 @@
 				</li>
 
 				<li>
-					<a href="contact.html">Contact</a>
+					<a href="{{route('contact')}}">Contact</a>
 				</li>
 			</ul>
 		</div>

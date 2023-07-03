@@ -5,6 +5,7 @@ use App\Http\Controllers\PanierController;
 use App\Http\Controllers\ProductController2;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageControll;
+use App\Http\Controllers\AdminPage;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,3 +61,4 @@ Route::controller(ProductController2::class)->group(function (){
 });
 
 route::resource('paniers', PanierController::class)->middleware(['auth', 'verified']);
+route::resource('admin', AdminPage::class);

@@ -10,13 +10,14 @@ use Illuminate\Support\Facades\Auth;
 class PageControll extends Controller
 {
     public function home(){
+        $allproducts = Product::get();
         if (Auth::id()) {
             $usertype = Auth()->user()->type;
     
             if ($usertype === 'user') {
                 return view('pages.home');
             } else if ($usertype === 'admin') {
-                return view('admin.home');
+                return view('admin.home',compact('allproducts'));
             }
         }
     return view('pages.home');
